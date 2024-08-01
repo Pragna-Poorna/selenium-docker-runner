@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+            label 'NODE1'
+          }
     stages {
         stage('Bring grid up') {
             steps {
